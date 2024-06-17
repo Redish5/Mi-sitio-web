@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Mural Interactivo De Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Periódico Mural Interactivo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#avisos">Avisos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>Minecraft cumple 15 Años</h3>
+                <p>El famoso videojuego "Minecraft" cumple 15 Años
+                    desde la fecha de su lanzamiento cual fue el 17 de mayo de 2009.
+                </p> <img src="fotos/maxresdefault (3).jpg" alt="">
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>xDefiant competidor directo de Call Of Duty</h3>
+                <p>Ha sido una larga espera, pero el competidor de "Call Of Duty" de Ubisoft "xDefiant", 
+                    ya llego y parece ser bastante bueno.  </p> <img src="fotos/images (1).jpeg" alt="">
+            </div>  
+        </section>
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>Regalos por el aniversario</h3>
+                <p>Minecraft por los 15 años va a estar regalando 15 regalos diarios en su version
+                    bedrock y tambien regalara 3 capas exclusivas. 
+                </p> <img src="fotos/15YR_Free_Cape-1-7cbcb0739e3df57534ec-259c8de8e04bf0beed88.jpg" alt="">
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>Xbox Games Showcase 2024</h3>
+                <p>Microsoft anuncia su esperado evento para el  9 de junio del presente año 
+                    donde se dice que tienen un as bajo la maga.
+                </p> <img src="fotos/images.jpeg" alt="">
+            </div>
+        </section>
+        <section id="avisos">
+            <h2>Avisos</h2>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>Hackeo masivo a Left4Dead2</h3>
+                <p>Ahora hay que tener mucho cuidado ya que los Servidores de Steam de Left 4 dead 2, esta siendo atacado por un grupo de hackers Rusos
+                    y por ahora las actualizacionas solo han podido mitigar el ataque.
+                </p> <img src="fotos/maxresdefault.jpg" alt="">
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>Como conseguir la capa de Twitch</h3>
+                <p>Para conseguir esta capa de Minecraft, tienes que entrar a algún stream de un partner de Twitch que esté jugando Minecraft, verlo durante 15 minutos y te llegará a tu inventario de drops de Twitch.
+                </p> <img src="fotos/maxresdefault (1).jpg" alt="">
+            </div>
+        </section>
+        <section id="avisos">
+            <h2>Minijuego</h2>
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this)">
+                <h3>MEMORAMA</h3>
+                <iframe src="https://onedrive.live.com/embed?resid=BCDEFEBF48676EB%21889&authkey=!AKkv8Z1QtnmmXZk&em=2" width="1800" height="1000" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Periódico Mural Interactivo</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-contenido"></p>
+            <img id="modal-imagen" src="" alt="Imagen del artículo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
